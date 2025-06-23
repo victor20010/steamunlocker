@@ -98,6 +98,8 @@ sequenceDiagram
     SteamClient->>CustomDLL: 5. 调用IsSubscribedApp
     CustomDLL-->>SteamClient: 6. 返回修改后的授权结果
 
+![deepseek_mermaid_20250623_6ad26a](https://github.com/user-attachments/assets/5f1dff8b-0540-4d8c-9408-5fdc7f789c1a)
+
 
 注意事项
 需要以管理员权限运行
