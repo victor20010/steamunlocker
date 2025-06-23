@@ -24,6 +24,7 @@ AppID管理：支持添加多个游戏AppID同时解锁
 编译生成可执行文件
 
 运行程序
+
 以管理员身份运行steamunlocker.exe
 
 输入想要解锁的游戏AppID（每行一个）
@@ -37,9 +38,13 @@ steamunlocker.exe 730 570 440 # 解锁CS:GO, Dota 2, TF2
 
 
 免责声明
+
 ⚠️ 此工具仅用于教育目的
+
 ⚠️ 不得用于盗版或非法用途
+
 ⚠️ 使用可能导致Steam账号封禁
+
 ⚠️ 支持开发者，请购买正版游戏
 
 
@@ -53,10 +58,15 @@ steamunlocker.exe 730 570 440 # 解锁CS:GO, Dota 2, TF2
 
 
 const char* DLL_TEMPLATE = R"(
+ 
   // DLL源代码模板
+  
   __declspec(dllexport) int g_appIdCount = %d;
+ 
   __declspec(dllexport) int g_appIds[] = {%s};
+ 
   // API钩取实现...
+
 )";
 
 
