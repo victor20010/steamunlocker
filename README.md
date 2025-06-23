@@ -1,5 +1,8 @@
 # steamunlocker
 SteamUnlocker - Steam游戏解锁工具
+
+注：如果你需要自己修改，可以使用code中的原版GL开源内核，当然也可以使用reass里的我的build版本
+
 SteamUnlocker是一个基于C++开发的工具，通过动态生成DLL并注入Steam进程，实现模拟拥有特定游戏的功能。该工具使用API钩取技术修改Steam的授权检查机制，让Steam认为用户拥有指定的游戏。
 功能特点
 动态DLL生成：运行时根据用户输入的游戏AppID生成定制化DLL
