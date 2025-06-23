@@ -46,12 +46,16 @@ steamunlocker.exe 730 570 440 # 解锁CS:GO, Dota 2, TF2
 技术细节：
 核心组件：
 1.DLL模板引擎：
+
+
 const char* DLL_TEMPLATE = R"(
   // DLL源代码模板
   __declspec(dllexport) int g_appIdCount = %d;
   __declspec(dllexport) int g_appIds[] = {%s};
   // API钩取实现...
 )";
+
+
 2.进程管理：
 
 Steam进程查找与终止
