@@ -12,12 +12,9 @@ AppID管理：支持添加多个游戏AppID同时解锁
 
 临时文件清理：使用后自动清理生成的临时文件
 技术实现：
-graph LR
-A[用户输入AppID] --> B[生成定制DLL]
-B --> C[终止Steam进程]
-C --> D[注入DLL到Steam]
-D --> E[重启Steam进程]
-E --> F[模拟游戏拥有权限]
+![deepseek_mermaid_20250623_6ca322](https://github.com/user-attachments/assets/910a3e4f-ce5f-4f00-83a9-ee010eff9ac8)
+
+
 使用说明
 编译项目
 使用Visual Studio打开项目
@@ -37,13 +34,17 @@ E --> F[模拟游戏拥有权限]
 
 命令行使用（可选）
 steamunlocker.exe 730 570 440 # 解锁CS:GO, Dota 2, TF2
+
+
 免责声明
 ⚠️ 此工具仅用于教育目的
 ⚠️ 不得用于盗版或非法用途
 ⚠️ 使用可能导致Steam账号封禁
 ⚠️ 支持开发者，请购买正版游戏
-技术细节
-核心组件
+
+
+技术细节：
+核心组件：
 1.DLL模板引擎：
 const char* DLL_TEMPLATE = R"(
   // DLL源代码模板
